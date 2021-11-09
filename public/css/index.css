@@ -1,8 +1,32 @@
 @import url(/assets/Kirana-Delova.ttf);
 
+
+
+/*Added animation bg */
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:69% 0%}
+    50%{background-position:32% 100%}
+    100%{background-position:69% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:69% 0%}
+    50%{background-position:32% 100%}
+    100%{background-position:69% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:69% 0%}
+    50%{background-position:32% 100%}
+    100%{background-position:69% 0%}
+}
+
 body{
     font-family: 'Kirana Delova', sans-serif;
-    
+    background: linear-gradient(181deg, #a4d1c5, #94b1a9, #78958d);
+    background-size: 600% 600%;
+    -webkit-animation: AnimationName 9s ease infinite;
+    -moz-animation: AnimationName 9s ease infinite;
+    animation: AnimationName 9s ease infinite;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -50,7 +74,7 @@ body{
 
 .nav a {
     text-decoration: none;
-    margin: 10px;
+    margin: 30px;
     padding: 10px;
     color: black;
 }
@@ -79,7 +103,6 @@ body{
     margin: auto;
     flex-direction: column;
     margin-bottom: 10%;
-    border: 1px solid black;
     border-radius: 10px;
     padding: 10px;
    
